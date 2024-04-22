@@ -1,0 +1,245 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e9e5af;
+    z-index: 100;
+    margin: 0 auto;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+
+  .links a:hover {
+    color: #cb9f9f;
+  }
+
+  .links a:active{
+    background-color: brown;
+    color: #fff;
+  }
+  
+
+body {
+    background-color:  #faf9e3;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    padding: 30px;
+  }
+  .main-text { 
+    max-width: 75vw;
+    margin: 0 auto;
+  }
+  
+  .main-text h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .main-text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .main-text p {
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .video iframe{
+        max-width: 100%; 
+        max-height: 100vh; 
+}
+
+/* .footer {
+    width: 98%;
+    float: left;
+    padding: 1%;
+    border-top: 2%;
+    background-color: #000;
+    color: #fff;
+    padding: 0 0;
+    margin-top: 100px;
+    text-align: center;
+    top:auto;
+  }
+  
+  .social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  } */
+
+.history-text{
+    max-width: 75vw;
+    margin: 0 auto; 
+  }
+.history-text h2{
+ text-align: center;
+}
+
+/*cycling*/
+.cycling-text{
+    max-width: 75vw; 
+    margin: 0 auto; /* Центрування */
+    margin-top: 30px;
+    display: flex;
+    gap: 5rem; /* між двома  */
+  }
+.cycling-text h2{
+ text-align: center;
+}
+  
+  .text-content {
+    flex: 1; /* весь простір */
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Переносити зображення на новий рядок */
+    max-width: 400px; 
+  }
+  
+  .image {
+    width: 60%; 
+    margin-bottom: 1rem; /* знизу */
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out; /* повільно-швидше-зупиниться*/
+  }
+  
+  .image-gallery a:hover .image { 
+    opacity: 1; 
+  }
+
+/*sights*/
+  .gallery {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Перехід на новий рядок*/
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallery figure {
+    margin: 10px; /* Відступ між фотографіями */
+    width: 300px; 
+    height: 200px; 
+    overflow: hidden; /* Приховати частини фотографій, які не вміщуються в рамці */
+    border: 1px solid #ccc; /* Додати рамку до фотографії */
+  }
+  /*рамка*/
+  .gallery figure img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Зберігати пропорції фотографії, заповнюючи всю рамку */
+    transition: transform 0.3s ease; /* анімація переходу */
+  }
+  
+  .gallery figure:hover img {
+    transform: scale(1.1); 
+  }
+
+  /*текст до фото*/
+  .gallery figcaption {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Додати напівпрозорий фон */
+    color: white;
+    padding: 10px; 
+    transition: opacity 0.3s ease;
+  }
+  /*показ тексту*/
+  .gallery figure:hover figcaption {
+    display: block; 
+    opacity: 1; 
+  }
+
+
+/*walking*/
+.walking-content {
+    margin: 30px auto;
+    max-width: 75vw;
+    display: flex;
+
+    flex-direction: column;
+  }
+.walking-text h2  {
+    text-align: center;
+}
+.walking-map{
+    display: flex;
+    flex-direction: row;
+    max-height: 800px;
+    width: 1200px;
+    height: 450px;
+}
+.walking-map iframe{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+
+/*bus*/
+.bus-content{
+    margin: 30px auto;
+    max-width: 75vw;
+}
+.bus-content h2{
+    text-align: center;
+}
+
+/*boat*/
+.boat-content{
+    margin: 30px auto;
+    max-width: 75vw;
+}
+.boat-content h2{
+    text-align: center;
+}

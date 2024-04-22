@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Автобусні маршрути</title>
+</head>
+<body>
+
+    <header class = "header" aling="center">
+        <nav class="navbar">
+            <div class="container">
+                <ul class="links">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="history.html">Історія міста</a></li>
+                    <li><a href="sights.html">Цікаві місця</a></li>
+                    <li><a href="walkingTours.html">Піші прогулянки</a></li>
+                    <li><a href="cyclingRoutes.html">Велосипедні маршрути</a></li>
+                    <li><a href="busRoutes.html">Автобусні маршрути</a></li>
+                    <li><a href="riverboatRoutes.html">Прогулянки на теплоході</a></li>
+                </ul>
+
+            </div>  
+        </nav>
+    </header>
+
+    <div class="bus-content">
+    <h2>Автобусні маршрути</h2>
+    
+    <p>Зверніть увагу на наші нові автобусні маршрути! Не пропустіть свій шанс на цікаву подорож.</p>
+
+    <table class="bus-table" border="1">
+        <tr>
+            <th>Маршрут</th>
+            <th>Час відправлення</th>
+        </tr>
+        <tr>
+            <td>Маршрут №1</td>
+            <td>8:00</td>
+        </tr>
+        <tr>
+            <td>Маршрут №2</td>
+            <td>9:30</td>
+        </tr>
+        <tr>
+            <td>Маршрут №3</td>
+            <td>11:00</td>
+        </tr>
+    </table>
+
+    <h3>Забронюйте собі екскурсію</h3>
+
+    <form class="reservation-form">
+        <label for="lname">Ім'я:</label>
+        <input type="text" id="fname" name="fname" placeholder="Введіть ваше ім'я">
+        <label for="lname">Прізвище:</label>
+        <input type="text" id="lname" name="lname" placeholder="Введіть ваше прізвище">
+        <label for="phone">Номер телефону:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Формат: 123-456-78-90" required>
+        <input type="submit" value="Забронювати">
+    </form>
+</div>
+    
+</body>
+</html>
