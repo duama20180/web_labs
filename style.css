@@ -1,11 +1,12 @@
 .header {
-    position: fixed;
+    position:  fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #e9e5af;
     z-index: 100;
     margin: 0 auto;
+    
   }
   
   .navbar {
@@ -231,9 +232,18 @@ body {
     margin: 30px auto;
     max-width: 75vw;
 }
+
 .bus-content h2{
     text-align: center;
 }
+
+.bus-table{
+        max-width: 780px;
+        text-wrap: wrap;
+        font-size: 14px;
+        background-color: #fee49b;
+        border-collapse: collapse;
+    }
 
 /*boat*/
 .boat-content{
@@ -242,4 +252,43 @@ body {
 }
 .boat-content h2{
     text-align: center;
+}
+.riverboatRoutes{
+    max-width: 780px;
+    text-wrap: wrap;
+    font-size: 14px;
+    background-color: #fee49b;
+    border-collapse: collapse;
+    }
+
+.inverted {
+      filter: invert(1) hue-rotate(180deg);
+  }    
+
+  .dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .header {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .links a {
+    color: #e0e0e0;
+}
+
+.dark-mode .links a:hover {
+    color: #cb9f9f;
+}
+
+.dark-mode .links a:active {
+    background-color: brown;
+    color: #fff;
+}
+.dark-mode .riverboatRoutes{
+  background-color: #1e1e1e;
+}
+.dark-mode .bus-table {
+  background-color: #1e1e1e;
 }

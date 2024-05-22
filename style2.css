@@ -114,12 +114,51 @@ body {
         filter: grayscale() brightness(.5);
         }    
 
+        .item::before, .item::after{
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 100%;
+        	right: calc(var(--index) * -1);
+      }
+
+
+      .items .item:hover {
+        transform: translateX(calc(var(--index) * 10));
+        filter: inherit;
+      }
+      
+      .items .item:hover + * {
+        transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+        filter: inherit;
+        z-index: -1;
+      }
+      .items .item:hover + * {
+        transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+        filter: inherit;
+        z-index: -1;
+      }
+      .items .item:hover + * {
+        transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
+        filter: inherit;
+        z-index: -1;
+      }
+
+      .item:has(+ :hover) {
+        transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+        filter: inherit;
+      }
+      .item:has(+ * + :hover) {
+        transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+        filter: inherit;
+      }
+
 
 
 
         /*
         
-            <div class="wrapper">
+      <div class="wrapper">
         <div class="items">
             <div class="item" tabindex="1" style="background-image: imgs/sights/1.jpeg"> </div>
             <div class="item" tabindex="2" style="background-image: imgs/sights/2.jpeg"></div>
