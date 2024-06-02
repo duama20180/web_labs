@@ -34,3 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reset();
     });
 });
+
+
+
+    const registerCircle = document.getElementById('register-circle');
+    const modal = document.getElementById('modal');
+    const closeModal = document.getElementById('close');
+
+    registerCircle.addEventListener('click', () => {
+        modal.style.display = 'block';
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
