@@ -17,25 +17,6 @@
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('registrationForm');
-
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        const firstName = document.getElementById('firstName').value;
-        const lastName = document.getElementById('lastName').value;
-        const phone = document.getElementById('phone').value;
-
-        // Тут можна додати функціонал для обробки даних, наприклад, відправити їх на сервер
-        console.log(`Ім'я: ${firstName}, Прізвище: ${lastName}, Номер телефону: ${phone}`);
-
-        alert('Реєстрація успішна!');
-        form.reset();
-    });
-});
-
-
 
     const registerCircle = document.getElementById('register-circle');
     const modal = document.getElementById('modal');
@@ -46,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
+            modal.style.display = 'none';
     });
 
     window.addEventListener('click', (event) => {
@@ -54,3 +35,44 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = 'none';
         }
     });
+/*
+    const video = document.getElementById('video');
+    const discountModal = document.getElementById('discount-content');
+    const closeDiscount = document.getElementById('close-discount');
+
+    video.addEventListener('ended', () => {
+        discountModal.style.display = 'block';
+    });
+
+    closeDiscount.addEventListener('click', () => {
+        discountModal.style.display = 'none';
+    });*/
+
+    setTimeout(() => {
+        document.getElementById('discount').style.display = 'block';
+    }, 120000);
+
+    // Закрити вікно з промокодом
+    document.getElementById('close-discount').onclick = function() {
+        document.getElementById('discount').style.display = 'none';
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

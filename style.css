@@ -221,6 +221,19 @@ text-align: center;
       background-color: #fee49b;
       border-collapse: collapse;
   }
+  
+  .bus-map{
+    display: flex;
+    flex-direction: row;
+    max-height: 800px;
+    width: 1200px;
+    height: 450px;
+  }
+  .bus-map iframe{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+  }
 
 /*boat*/
 .boat-content{
@@ -338,8 +351,8 @@ body.dark-mode input:checked + .slider:before {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px; /* ширини для розміщення тексту */
-  height: 60px; /* висоти для розміщення тексту */
+  width: 65px; /* ширини для розміщення тексту */
+  height: 65px; /* висоти для розміщення тексту */
   background-color: #a8d5ba; /* Блідий зелений */
   color: white;
   border-radius: 50%;
@@ -357,7 +370,8 @@ body.dark-mode input:checked + .slider:before {
   background-color: #90c1a4;
 }
 
-.modal {
+.modal,
+.discount {
   display: none;
   position: fixed;
   z-index: 101;
@@ -369,8 +383,9 @@ body.dark-mode input:checked + .slider:before {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
-  background-color: #fefefe;
+.modal-content,
+.discount-content{
+  background-color: #faf9e3;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -379,7 +394,15 @@ body.dark-mode input:checked + .slider:before {
   border-radius: 8px;
 }
 
-.close {
+body.dark-mode .modal-content,
+body.dark-mode .discount-content  {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.close,
+.clode-discount {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -389,12 +412,29 @@ body.dark-mode input:checked + .slider:before {
   cursor: pointer;
   transition: color 0.3s;
 }
+.clode-discount{
+  text-align: center;
+}
+
+body.dark-mode .close
+body.dark-mode .close-discount {
+  color: #ccc;
+}
 
 .close:hover,
-.close:focus {
+.close:focus, 
+.close-discount:hover,
+.close-discount:focus{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+body.dark-mode .close:hover,
+body.dark-mode .close:focus 
+body.dark-mode .close-discount:hover,
+body.dark-mode .close-discount:focus{
+  color: #fff;
 }
 
 .modal-content h2 {
@@ -418,6 +458,13 @@ body.dark-mode input:checked + .slider:before {
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
+}
+
+body.dark-mode .modal-content form input,
+body.dark-mode .modal-content form select {
+  background-color: #555;
+  color: #fff;
+  border-color: #777;
 }
 
 .modal-content form button {

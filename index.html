@@ -29,8 +29,6 @@
     </header>
 
 
-
-
     <div class="main-text">
     <h1> <p > Запрошуємо на екскурсію Вінницею ! </p> </h1>
 
@@ -52,10 +50,9 @@
     <h2>Прогулянки на теплоході</h2>
     <p>Насолоджуйтесь красою річки Південний Буг, відвідуючи місто з води на наших теплоходах.</p>
    
-</div>
+    </div>
 
     
-
     <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/2D7I3s089gE?si=DIeYe7ZmeotuxLAv" 
         title="YouTube video player" frameborder="0" 
@@ -63,8 +60,18 @@
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     
     </div>
 
-    <!-- кнопка -->
-    <div class="register-circle" id="register-circle">Реєстрація</div>
+
+    <div class="discount" id="discount">
+        <div class="discount-content">
+            <span class="close-discount" id="close-discount">&times;</span>
+            <h2>Ви отримали промокод </h2>
+            <p>Використовуйте його при бронюванні!</p>
+            <p>Промокод на знижку: <strong>DISCOUNT2024</strong></p>
+        </div>
+    </div>
+
+
+    <div class="register-circle" id="register-circle">Бронювання</div>
 
     <!-- реєстрація-->
     <div class="modal" id="modal">
@@ -80,20 +87,26 @@
                     <option value="riverboatTours">Прогулянки на теплоході</option>
                 </select>
                 <br>
-                <label for="first-name">Ім'я:</label>
-                <input type="text" id="first-name" name="first-name">
+                    <label for="first-name">Ім'я:</label>
+                    <input type="text" id="first-name" name="first-name">
                 <br>
-                <label for="last-name">Прізвище:</label>
-                <input type="text" id="last-name" name="last-name">
+                    <label for="last-name">Прізвище:</label>
+                    <input type="text" id="last-name" name="last-name">
                 <br>
-                <label for="phone-number">Номер телефону:</label>
-                <input type="tel" id="phone-number" name="phone-number">
+                    <label for="phone-number">Номер телефону:</label>
+                    <input type="tel" id="phone-number" name="phone-number">
                 <br>
-                <button type="submit">Зареєструватись</button>
+                    <label for="discount-label">Код на знижку:</label>
+                    <input type="text" id="discount-label" name="discount-label">
+                <br>
+                    <button type="submit">Забронювати</button>
             </form>
         </div>
     </div>
 
-      <script src="./script.js"></script>
+
+    <script src="./script.js"></script>
+
+
 </body>
 </html>
