@@ -298,11 +298,11 @@ background-color: #1e1e1e;
 .slider:before {
   position: absolute;
   content: "";
-  height: 12px;
-  width: 12px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: yellow;
   transition: .4s;
   border-radius: 50%;
 }
@@ -313,16 +313,21 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(14px);
+  background-color: #ffeb3b; 
 }
 
-body.dark-mode {
-  background-color: #333;
-  color: white;
+body.dark-mode .slider {
+  background-color: #555;
 }
 
-body.dark-mode .header {
-  background-color: #444;
-}
 body.dark-mode input:checked + .slider {
   background-color: #222;
+}
+
+body.dark-mode .slider:before {
+  background-color: #f1c40f; 
+}
+
+body.dark-mode input:checked + .slider:before {
+  background-color: #e0e0e0; 
 }
