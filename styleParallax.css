@@ -52,18 +52,20 @@ body, html {
   }
   
   .caption span.border {
-    background-color: #212121;
-    padding: 18px;
+    background-color: rgba(21, 21, 21, 0.65) ;
+    padding: 15px;
     letter-spacing: 10px;
     font-size:25px;
     color: #f7f7f7;
+    line-height: 2.35;
   }
   
   .text-between {
     position: relative;
+    padding:50px 80px;
   }
 
-  .text-between .text-between-content{
+  .text-between .text-between-content dark-mode{
     color:#ddd;
     background-color:#282E34;
     text-align:center;
@@ -79,9 +81,32 @@ body, html {
     color: #111;
   }
   
-  /* Turn off parallax scrolling for tablets and phones */
+  /* вик*/
   @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
     }
   }
+
+  body.dark-mode, html.dark-mode {
+    color: #ddd;
+    background-color: #121212;
+}
+
+.dark-mode .first-text {
+    color: #ddd;
+    background-color: #333;
+}
+
+.dark-mode .caption {
+    color: #f7f7f7;
+}
+
+.dark-mode .text-between .text-between-content {
+    color: #ddd;
+    background-color: #282E34;
+}
+
+.dark-mode h3 {
+    color: #f7f7f7;
+}
