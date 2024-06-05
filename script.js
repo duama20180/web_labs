@@ -21,6 +21,8 @@
     const registerCircle = document.getElementById('register-circle');
     const modal = document.getElementById('modal');
     const closeModal = document.getElementById('close');
+    const submit = document.getElementById('submit');
+
 
     registerCircle.addEventListener('click', () => {
         modal.style.display = 'block';
@@ -35,28 +37,20 @@
             modal.style.display = 'none';
         }
     });
-/*
-    const video = document.getElementById('video');
-    const discountModal = document.getElementById('discount-content');
-    const closeDiscount = document.getElementById('close-discount');
 
-    video.addEventListener('ended', () => {
-        discountModal.style.display = 'block';
-    });
-
-    closeDiscount.addEventListener('click', () => {
-        discountModal.style.display = 'none';
-    });*/
-
+    submit.addEventListener('click', ()=> {
+        alert('Успішно заброньовано!');
+        modal.style.display = 'none';
+    })
+ 
     setTimeout(() => {
         document.getElementById('discount').style.display = 'block';
     }, 120000);
+    
 
-    // Закрити вікно з промокодом
     document.getElementById('close-discount').onclick = function() {
         document.getElementById('discount').style.display = 'none';
     }
-
 
 
 

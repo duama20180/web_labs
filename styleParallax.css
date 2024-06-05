@@ -12,8 +12,14 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
+    /*transform: rotate(-3deg);
+    transition: transform 0.5s ease-in-out;*/ 
   }
+  /*
+   .bgimg-1:hover, .bgimg-2:hover, .bgimg-3:hover, .bgimg-4:hover {
+    transform: rotate(0deg); 
+  } */
+
   .bgimg-1 {
     background-image:  url("/parallax/0.jpg");
     min-height: 100%;
@@ -58,6 +64,8 @@ body, html {
     font-size:25px;
     color: #f7f7f7;
     line-height: 2.35;
+    transition: transform 0.1s ease-in-out;
+    transform-style: preserve-3d;
   }
   
   .text-between {
@@ -81,18 +89,29 @@ body, html {
     color: #111;
   }
   
-  /* вик*/
+  /* викл*/
   @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
+        transform: rotate(0deg);
     }
   }
+  
+ /* @media only screen and (max-device-width: 1394px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+        transform: rotate(0deg);
+    }
+  }*/
 
   body.dark-mode, html.dark-mode {
     color: #ddd;
     background-color: #121212;
 }
 
+.dark-mode .text-between{
+  background-color:#282E34
+}
 .dark-mode .first-text {
     color: #ddd;
     background-color: #333;
@@ -110,3 +129,4 @@ body, html {
 .dark-mode h3 {
     color: #f7f7f7;
 }
+
