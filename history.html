@@ -7,44 +7,47 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="styleParallax.css">
         <title>Історія міста</title>
+        <link rel="preload" href="/parallax/0.jpg" as="image">
+
 
 </head>
 
 <body>
 
-    <header class = "header" aling="center">
+    <header class="header" aling="center">
         <nav class="navbar">
             <div class="container">
+                <div class="menu-slider-container">
                 <ul class="links">
                     <li><a href="index.html">Головна</a></li>
                     <li><a href="history.html">Історія міста</a></li>
                     <li><a href="sights.html">Цікаві місця</a></li>
-                    <li><a href="walkingTours.html">Піші прогулянки</a></li>
-                    <li><a href="cyclingRoutes.html">Велосипедні маршрути</a></li>
-                    <li><a href="busRoutes.html">Автобусні маршрути</a></li>
-                    <li><a href="riverboatRoutes.html">Прогулянки на теплоході</a></li>
-                    <li> <label class="switch">
+                    <li class="tour-item"><a href="walkingTours.html">Піші прогулянки</a></li>
+                    <li class="tour-item"><a href="cyclingRoutes.html">Велосипедні маршрути</a></li>
+                    <li class="tour-item"><a href="busRoutes.html">Автобусні маршрути</a></li>
+                    <li class="tour-item"><a href="riverboatRoutes.html">Прогулянки на теплоході</a></li>
+                    <li class="excursions-button">
+                        <a href="#">Екскурсії</a>
+                        <ul class="dropdown">
+                            <li><a href="walkingTours.html">Піші прогулянки</a></li>
+                            <li><a href="cyclingRoutes.html">Велосипедні маршрути</a></li>
+                            <li><a href="busRoutes.html">Автобусні маршрути</a></li>
+                            <li><a href="riverboatRoutes.html">Прогулянки на теплоході</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                    <button class="menu-button">☰</button>
+                    <label class="switch">
                         <input type="checkbox" id="theme-slider">
                         <span class="slider round"></span>
-                    </label></li>
-
-                </ul>
-
-            </div>  
+                    </label>
+                </div>
+            
+            
+            </div>
         </nav>
     </header>
-
-    <!-- <div class="history-text">
-    <h2></h2>
-    <p>Вінниця — найбільше місто Поділля, розміщене на перехресті головних шляхів з Києва, Львова, Одеси, що розвинулось на берегах річки Південний Буг.</p>
-    <p>Напевне, саме тому місто поєднує у собі безліч культур, так як навіть на центральній вулиці, Соборній, через дорогу співіснують собор, костел і синагога, а в самому місті можна з Варшави потрапити на Париж, прогулятись через Корею на Єрусалим і відвідати Чорнобиль лише за годину, тому що місто радо зустрічає нових поселенців і назавжди зберігає згадку про них.</p>
-    <p></p>
-    <p>.</p>
-    <p></p>
-    </div>
-    <p style="text-align: center;"> 
-        <img src="imgs/history1.jpg" alt="історичне фото Вінниці"> 
-    </p> -->
 
     <body>
     
@@ -122,7 +125,7 @@
     
                 </form>
             </div>
-        </div>
+        </div>  
 
 
     <script src="./script.js"></script>

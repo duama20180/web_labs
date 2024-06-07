@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style2.css"> -->
     <title>Теплоходні маршрути у Вінниці</title>
 
 </head>
@@ -14,24 +13,38 @@
 
 <body>
 
-    <header class = "header" aling="center">
+    <header class="header" aling="center">
         <nav class="navbar">
             <div class="container">
+                <div class="menu-slider-container">
                 <ul class="links">
                     <li><a href="index.html">Головна</a></li>
                     <li><a href="history.html">Історія міста</a></li>
                     <li><a href="sights.html">Цікаві місця</a></li>
-                    <li><a href="walkingTours.html">Піші прогулянки</a></li>
-                    <li><a href="cyclingRoutes.html">Велосипедні маршрути</a></li>
-                    <li><a href="busRoutes.html">Автобусні маршрути</a></li>
-                    <li><a href="riverboatRoutes.html">Прогулянки на теплоході</a></li>
-                   <li> <label class="switch">
+                    <li class="tour-item"><a href="walkingTours.html">Піші прогулянки</a></li>
+                    <li class="tour-item"><a href="cyclingRoutes.html">Велосипедні маршрути</a></li>
+                    <li class="tour-item"><a href="busRoutes.html">Автобусні маршрути</a></li>
+                    <li class="tour-item"><a href="riverboatRoutes.html">Прогулянки на теплоході</a></li>
+                    <li class="excursions-button">
+                        <a href="#">Екскурсії</a>
+                        <ul class="dropdown">
+                            <li><a href="walkingTours.html">Піші прогулянки</a></li>
+                            <li><a href="cyclingRoutes.html">Велосипедні маршрути</a></li>
+                            <li><a href="busRoutes.html">Автобусні маршрути</a></li>
+                            <li><a href="riverboatRoutes.html">Прогулянки на теплоході</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                    <button class="menu-button">☰</button>
+                    <label class="switch">
                         <input type="checkbox" id="theme-slider">
                         <span class="slider round"></span>
-                    </label></li>
-                </ul>
-
-            </div>  
+                    </label>
+                </div>
+            
+            
+            </div>
         </nav>
     </header>
 
@@ -46,25 +59,21 @@
             <th>Маршрут</th>
             <th>Тривалість</th>
             <th>Ціна</th>
-            <!-- <th>ще один</th> -->
         </tr>
         <tr>
             <td>Маршрут 1</td>
             <td>2 години</td>
             <td>300 грн</td>
-            <!-- <th>ще один</th> -->
         </tr>
         <tr>
             <td>Маршрут 2</td>
             <td>3 години</td>
             <td>500 грн</td>
-            <!-- <th>ще один</th> -->
         </tr>
         <tr>
             <td>Маршрут 3</td>
             <td>1 година</td>
             <td>150 грн</td>
-            <!-- <th><img src="/imgs/bus.jpg" alt="photo"></th> -->
         </tr>
     </table>
 

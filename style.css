@@ -1,12 +1,11 @@
 .header {
-  position:  fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #e9e5af;
   z-index: 100;
   margin: 0 auto;
-  
 }
 
 .navbar {
@@ -23,6 +22,7 @@
   margin: 0 auto;
 }
 
+
 .links {
   list-style: none;
   margin: 0;
@@ -32,6 +32,7 @@
 .links li {
   display: inline-block;
   margin-right: 20px;
+  transition: margin-right 0.3s ease;
 }
 
 .links a {
@@ -39,13 +40,375 @@
   color: #000000;
   font-weight: bold;
   padding: 10px 20px;
+  transition: margin-right 0.3s ease;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #e9e5af;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 140%;
+  left:0;
+}
+
+.dropdown li {
+  display: block;
+  margin: 0;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.links .excursions-button {
+  position: relative;
+  display: none;
+}
+
+.links .excursions-button:hover .dropdown,
+.links .excursions-button:focus .dropdown {
+  display: block;
+}
+
+.slider-item {
+  margin-left: 20px;
+}
+.menu-button{
+  display: none;
+}
+.menu-slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.links li, .links a {
+  transition: all 0.3s ease;
+}
+.dark-mode .menu-button{
+  color:whitesmoke ;
+}
+
+@media only screen and (max-width: 1454px) and (min-width: 1210px) {
+  .links li {
+    margin-right: 5px;
+  }
+
+  .links a {
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1210px) {
+  .links li {
+    margin-right: 5px;
+  }
+
+  .links a {
+    padding: 5px 10px;
+  }
+  
+  .links .excursions-button {
+    display: inline;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .dark-mode .excursions-button li {
+    background-color: #1e1e1e; 
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .dark-mode .excursions-button li{
+    background-color: #1e1e1e;
+    border: none;
+  }
+
+  .container .tour-item {
+    display: none;
+  }
+
+  .excursions-button {
+    display: inline-block;
+  }
+
+  .links a {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dark-mode .excursions-button li{
+    background-color: #1e1e1e;
+  }
+
+  .links li {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .links a {
+    padding: 5px 10px;
+  }
+
+  .links .excursions-button {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 320px) {
+  .dark-mode .menu-slider-container li{
+    background-color: #1e1e1e;
+  }
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .switch {
+    margin-left: 30px;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e9e5af;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .links li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button.active + .links,
+  .links.active {
+    display: flex;
+  }
+
+  .menu-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown li {
+    width: 100%;
+  }
+
+  .dropdown a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .dark-mode .menu-slider-container li{
+    background-color: #1e1e1e;
+  }
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .switch {
+    margin-left: 50px;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e9e5af;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .links li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button.active + .links,
+  .links.active {
+    display: flex;
+  }
+
+  .menu-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown li {
+    width: 100%;
+  }
+
+  .dropdown a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .dark-mode .menu-slider-container li{
+    background-color: #1e1e1e;
+  }
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .switch {
+    margin-left: 70px;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e9e5af;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .links li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button.active + .links,
+  .links.active {
+    display: flex;
+  }
+
+  .menu-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown li {
+    width: 100%;
+  }
+
+  .dropdown a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
 }
 
 .links a:hover {
   color: #cb9f9f;
 }
 
-.links a:active{
+.links a:active {
   background-color: brown;
   color: #fff;
 }
@@ -268,6 +631,7 @@ text-align: center;
   color: #e0e0e0;
 }
 
+
 .dark-mode .links a:hover {
   color: #cb9f9f;
 }
@@ -315,7 +679,7 @@ background-color: #1e1e1e;
   width: 16px;
   left: 2px;
   bottom: 2px;
-  background-color: yellow;
+  background-color: #f1c40f;
   transition: .4s;
   border-radius: 50%;
 }
@@ -400,6 +764,8 @@ body.dark-mode .discount-content  {
   color: #fff;
   border-color: #555;
 }
+
+
 
 .close,
 .clode-discount {
