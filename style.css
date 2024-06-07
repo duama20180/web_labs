@@ -22,7 +22,6 @@
   margin: 0 auto;
 }
 
-
 .links {
   list-style: none;
   margin: 0;
@@ -92,76 +91,15 @@
   color:whitesmoke ;
 }
 
-@media only screen and (max-width: 1454px) and (min-width: 1210px) {
-  .links li {
-    margin-right: 5px;
-  }
-
-  .links a {
-    padding: 5px 10px;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1210px) {
-  .links li {
-    margin-right: 5px;
-  }
-
-  .links a {
-    padding: 5px 10px;
-  }
-  
-  .links .excursions-button {
-    display: inline;
-  }
-}
-
-@media (max-width: 1024px) {
-
-  .dark-mode .excursions-button li {
-    background-color: #1e1e1e; 
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
-  .dark-mode .excursions-button li{
-    background-color: #1e1e1e;
-    border: none;
-  }
-
-  .container .tour-item {
-    display: none;
-  }
-
-  .excursions-button {
-    display: inline-block;
-  }
-
-  .links a {
-    margin-right: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .dark-mode .excursions-button li{
-    background-color: #1e1e1e;
-  }
-
-  .links li {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-
-  .links a {
-    padding: 5px 10px;
-  }
-
-  .links .excursions-button {
-    display: inline-block;
-  }
-}
 
 @media (max-width: 320px) {
+  .links .tour-item{
+    display: none;
+  }
+  .links .excursions-button {
+    display: inline-block;
+  }
+
   .dark-mode .menu-slider-container li{
     background-color: #1e1e1e;
   }
@@ -242,7 +180,103 @@
   }
 }
 
-@media (min-width: 375px) and (max-width: 424px) {
+@media (min-width: 321px) and (max-width: 376px) {
+  .links .tour-item{
+    display: none;
+  }
+  .links .excursions-button {
+    display: inline-block;
+  }
+
+  .dark-mode .menu-slider-container li {
+    background-color: #1e1e1e;
+  }
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem; /* Keep the font size consistent */
+    cursor: pointer;
+    color: #000;
+  }
+
+  .switch {
+    margin-left: 30px; 
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e9e5af;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .links li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button.active + .links,
+  .links.active {
+    display: flex;
+  }
+
+  .menu-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown li {
+    width: 100%;
+  }
+
+  .dropdown a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 424px) {
+
+  .links .tour-item{
+    display: none;
+  }
+  .links .excursions-button {
+    display: inline-block;
+  }
+
   .dark-mode .menu-slider-container li{
     background-color: #1e1e1e;
   }
@@ -323,7 +357,15 @@
   }
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 425px) and (max-width: 767.98px) {
+
+  .links .tour-item{
+    display: none;
+  }
+  .links .excursions-button {
+    display: inline-block;
+  }
+
   .dark-mode .menu-slider-container li{
     background-color: #1e1e1e;
   }
@@ -404,6 +446,108 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023.98px){
+  .dark-mode .excursions-button li{
+    background-color: #1e1e1e;
+  }
+
+  .links li {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .links a {
+    padding: 5px 17px;
+  }
+
+  .links .excursions-button {
+    display: inline-block;
+  }
+  .dark-mode .excursions-button li{
+    background-color: #1e1e1e;
+    border: none;
+  }
+
+  .container .tour-item {
+    display: none;
+  }
+
+  .excursions-button {
+    display: inline-block;
+  }
+
+  .links a {
+    margin-right: 5vw;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1210.98px) {
+
+  .dark-mode .excursions-button li {
+    background-color: #1e1e1e; 
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .dark-mode .excursions-button li{
+    background-color: #1e1e1e;
+    border: none;
+  }
+
+  .container .tour-item {
+    display: none;
+  }
+
+  .excursions-button {
+    display: inline-block;
+  }
+
+  .links a {
+    margin-right: 60px;
+  }
+} 
+
+@media  (min-width: 1024px){
+  .links li {
+    margin-right: 5px;
+  }
+
+  .links a {
+    padding: 5px 10px;
+  }
+  
+  .links .excursions-button {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1211px)  and (max-width: 1454.98px) {
+  .links .excursions-button{
+    display: none;
+  }
+  
+  .links li {
+    margin-right: 5px;
+  }
+
+  .links a {
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (min-width: 1455px) {
+  .links .excursions-button{
+    display: none;
+  }
+  .links li {
+    margin-right: 2.5vw;
+  }
+
+  .links a {
+    padding: 5px 10px;
+  }
+}
+
 .links a:hover {
   color: #cb9f9f;
 }
@@ -412,7 +556,6 @@
   background-color: brown;
   color: #fff;
 }
-
 
 body {
   background-color:  #faf9e3;
@@ -454,7 +597,6 @@ body {
       max-height: 100vh; 
 }
 
-
 .history-text{
   max-width: 75vw;
   margin: 0 auto; 
@@ -469,7 +611,7 @@ text-align: center;
   margin: 0 auto; /* Центрування */
   margin-top: 30px;
   display: flex;
-  gap: 5rem; /* між двома  */
+  gap: 5rem;
 }
 .cycling-text h2{
 text-align: center;
@@ -715,9 +857,9 @@ body.dark-mode input:checked + .slider:before {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 65px; /* ширини для розміщення тексту */
-  height: 65px; /* висоти для розміщення тексту */
-  background-color: #a8d5ba; /* Блідий зелений */
+  width: 65px; 
+  height: 65px; 
+  background-color: #a8d5ba; 
   color: white;
   border-radius: 50%;
   display: flex;
@@ -727,7 +869,7 @@ body.dark-mode input:checked + .slider:before {
   font-size: 14px;
   text-align: center;
   transition: background-color 0.3s;
-  padding: 10px; /*  паддінг для тексту */
+  padding: 10px; 
 }
 
 .register-circle:hover {

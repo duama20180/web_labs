@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Знижка
     setTimeout(() => {
         document.getElementById('discount').style.display = 'block';
-    }, 12000000);
+    }, 1200000);
 
     document.getElementById('close-discount').onclick = function() {
         document.getElementById('discount').style.display = 'none';
