@@ -91,6 +91,21 @@
   color:whitesmoke ;
 }
 
+.links a:hover {
+  color: #cb9f9f;
+}
+
+.links a:active {
+  background-color: brown;
+  color: #fff;
+}
+
+body {
+  background-color:  #faf9e3;
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  padding: 30px;
+}
 
 @media (max-width: 320px) {
   .links .tour-item{
@@ -195,7 +210,7 @@
     display: block;
     background: none;
     border: none;
-    font-size: 2rem; /* Keep the font size consistent */
+    font-size: 2rem;
     cursor: pointer;
     color: #000;
   }
@@ -447,6 +462,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px){
+  
   .dark-mode .excursions-button li{
     background-color: #1e1e1e;
   }
@@ -535,7 +551,7 @@
   }
 }
 
-@media only screen and (min-width: 1455px) {
+@media screen and (min-width: 1456px) and (max-width:2000px) {
   .links .excursions-button{
     display: none;
   }
@@ -546,215 +562,8 @@
   .links a {
     padding: 5px 10px;
   }
-}
 
-.links a:hover {
-  color: #cb9f9f;
 }
-
-.links a:active {
-  background-color: brown;
-  color: #fff;
-}
-
-body {
-  background-color:  #faf9e3;
-  font-family: Arial, sans-serif;
-  margin: 30px;
-  padding: 30px;
-}
-.main-text { 
-  max-width: 75vw;
-  margin: 0 auto;
-}
-
-.main-text h1 {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.main-text h2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.main-text p {
-  margin-bottom: 10px;
-  align-items: center;
-}
-
-.video{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-  .video iframe{
-      max-width: 100%; 
-      max-height: 100vh; 
-}
-
-.history-text{
-  max-width: 75vw;
-  margin: 0 auto; 
-}
-.history-text h2{
-text-align: center;
-}
-
-/*cycling*/
-.cycling-text{
-  max-width: 75vw; 
-  margin: 0 auto; /* Центрування */
-  margin-top: 30px;
-  display: flex;
-  gap: 5rem;
-}
-.cycling-text h2{
-text-align: center;
-}
-
-.text-content {
-  flex: 1; /* весь простір */
-}
-
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap; /* Переносити зображення на новий рядок */
-  max-width: 400px; 
-}
-
-.image {
-  width: 60%; 
-  margin-bottom: 1rem; /* знизу */
-  opacity: 0.7;
-  transition: opacity 0.3s ease-in-out; /* повільно-швидше-зупиниться*/
-}
-
-.image-gallery a:hover .image { 
-  opacity: 1; 
-}
-
-/*sights*/
-.gallery {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap; /* Перехід на новий рядок*/
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery figure {
-  margin: 10px; /* Відступ між фотографіями */
-  width: 300px; 
-  height: 200px; 
-  overflow: hidden; /* Приховати частини фотографій, які не вміщуються в рамці */
-  border: 1px solid #ccc; /* Додати рамку до фотографії */
-}
-/*рамка*/
-.gallery figure img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; /* Зберігати пропорції фотографії, заповнюючи всю рамку */
-  transition: transform 0.3s ease; /* анімація переходу */
-}
-
-.gallery figure:hover img {
-  transform: scale(1.1); 
-}
-
-/*текст до фото*/
-.gallery figcaption {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Додати напівпрозорий фон */
-  color: white;
-  padding: 10px; 
-  transition: opacity 0.3s ease;
-}
-/*показ тексту*/
-.gallery figure:hover figcaption {
-  display: block; 
-  opacity: 1; 
-}
-
-
-/*walking*/
-.walking-content {
-  margin: 30px auto;
-  max-width: 75vw;
-  display: flex;
-
-  flex-direction: column;
-}
-.walking-text h2  {
-  text-align: center;
-}
-.walking-map{
-  display: flex;
-  flex-direction: row;
-  max-height: 800px;
-  width: 1200px;
-  height: 450px;
-}
-.walking-map iframe{
-  width: 100%;
-  height: 100%;
-  margin: 20px;
-}
-
-/*bus*/
-.bus-content{
-  margin: 30px auto;
-  max-width: 75vw;
-}
-
-.bus-content h2{
-  text-align: center;
-}
-
-.bus-table{
-      max-width: 780px;
-      text-wrap: wrap;
-      font-size: 14px;
-      background-color: #fee49b;
-      border-collapse: collapse;
-  }
-  
-  .bus-map{
-    display: flex;
-    flex-direction: row;
-    max-height: 800px;
-    width: 1200px;
-    height: 450px;
-  }
-  .bus-map iframe{
-    width: 100%;
-    height: 100%;
-    margin: 20px;
-  }
-
-/*boat*/
-.boat-content{
-  margin: 30px auto;
-  max-width: 75vw;
-}
-.boat-content h2{
-  text-align: center;
-}
-.riverboatRoutes{
-  max-width: 780px;
-  text-wrap: wrap;
-  font-size: 14px;
-  background-color: #fee49b;
-  border-collapse: collapse;
-  }
 
 .inverted {
     filter: invert(1) hue-rotate(180deg);
@@ -772,7 +581,6 @@ text-align: center;
 .dark-mode .links a {
   color: #e0e0e0;
 }
-
 
 .dark-mode .links a:hover {
   color: #cb9f9f;
@@ -852,7 +660,6 @@ body.dark-mode input:checked + .slider:before {
 }
 
 
-/*реєстрація*/
 .register-circle {
   position: fixed;
   bottom: 20px;
@@ -907,8 +714,6 @@ body.dark-mode .discount-content  {
   border-color: #555;
 }
 
-
-
 .close,
 .clode-discount {
   position: absolute;
@@ -924,7 +729,7 @@ body.dark-mode .discount-content  {
   text-align: center;
 }
 
-body.dark-mode .close
+body.dark-mode .close,
 body.dark-mode .close-discount {
   color: #ccc;
 }
@@ -939,7 +744,7 @@ body.dark-mode .close-discount {
 }
 
 body.dark-mode .close:hover,
-body.dark-mode .close:focus 
+body.dark-mode .close:focus,
 body.dark-mode .close-discount:hover,
 body.dark-mode .close-discount:focus{
   color: #fff;
@@ -987,5 +792,3 @@ body.dark-mode .modal-content form select {
 .modal-content form button:hover {
   background-color: #45a049;
 }
-
-

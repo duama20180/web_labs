@@ -1,0 +1,31 @@
+.cycling-text{
+    max-width: 75vw; 
+    margin: 0 auto; /* Центрування */
+    margin-top: 30px;
+    display: flex;
+    gap: 5rem;
+  }
+  .cycling-text h2{
+  text-align: center;
+  }
+  
+  .text-content {
+    flex: 1; /* весь простір */
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Переносити зображення на новий рядок */
+    max-width: 400px; 
+  }
+  
+  .image {
+    width: 60%; 
+    margin-bottom: 1rem; /* знизу */
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out; /* повільно-швидше-зупиниться*/
+  }
+  
+  .image-gallery a:hover .image { 
+    opacity: 1; 
+  }

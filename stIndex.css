@@ -1,0 +1,43 @@
+.main-text { 
+    max-width: 75vw;
+    margin: 0 auto;
+  }
+  
+  .main-text h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .main-text h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .main-text p {
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    .video iframe{
+        max-width: 100%; 
+        max-height: 100vh; 
+  }
+
+  
+   @media only screen and(min-width:2000px){
+    .main-text h1,
+    .main-text h2,
+    .main-text p{ 
+        font-size: 30px;
+
+    }
+  } 
