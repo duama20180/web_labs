@@ -1,14 +1,84 @@
-.boat-content{
+.walking-content {
   margin: 30px auto;
-  max-width: 75vw;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
 }
-.boat-content h2{
+
+.walking-text h2 {
   text-align: center;
 }
-.riverboatRoutes{
-  max-width: 780px;
-  text-wrap: wrap;
-  font-size: 14px;
-  background-color: #fee49b;
-  border-collapse: collapse;
+
+.walking-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.walking-map iframe {
+  width: 90%;
+  height: 300px;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .walking-map {
+    flex-direction: row;
+    justify-content: space-around;
   }
+
+  .walking-map iframe {
+    width: 45%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .walking-content {
+    max-width: 75vw;
+  }
+
+  .walking-map iframe {
+    height: 450px;
+  }
+}
+
+.boat-content {
+  margin: 30px auto;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boat-content h2, .boat-content h3 {
+  text-align: center;
+}
+
+.boat-content p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.riverboatRoutes {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.riverboatRoutes th, .riverboatRoutes td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.riverboatRoutes th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .riverboatRoutes {
+    width: 75%;
+  }
+}

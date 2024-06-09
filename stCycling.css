@@ -3,7 +3,7 @@
     margin: 0 auto; /* Центрування */
     margin-top: 30px;
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
   }
   .cycling-text h2{
   text-align: center;
@@ -20,12 +20,46 @@
   }
   
   .image {
-    width: 60%; 
-    margin-bottom: 1rem; /* знизу */
+    width: calc(100% - 1rem); /* Ширина з урахуванням проміжків */
+    max-width: 400px;
     opacity: 0.7;
-    transition: opacity 0.3s ease-in-out; /* повільно-швидше-зупиниться*/
+    transition: opacity 0.3s ease-in-out;
   }
   
   .image-gallery a:hover .image { 
     opacity: 1; 
+  }
+
+  @media (max-width:600px) {
+    .cycling-text{
+    flex-direction: column;
+    }
+  }
+
+  @media(max-width:500px) {
+    .image {
+      width: calc(100% - 1rem); /* Ширина для однієї колонки на маленьких екранах */
+  }
+    
+  }
+
+  @media (min-width:1200px ) {
+
+    .cycling-text h2{
+      font-size: 40px;
+      transition: 0.3s ease;
+
+    }
+    .cycling-text p{
+      font-size: 20px;
+      transition: 0.3s ease;
+    }
+    
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap; 
+      max-width: 700px; 
+      transition: 0.3s ease;
+    }
+
   }

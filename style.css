@@ -107,463 +107,6 @@ body {
   padding: 30px;
 }
 
-@media (max-width: 320px) {
-  .links .tour-item{
-    display: none;
-  }
-  .links .excursions-button {
-    display: inline-block;
-  }
-
-  .dark-mode .menu-slider-container li{
-    background-color: #1e1e1e;
-  }
-  .menu-button {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #000;
-  }
-
-  .switch {
-    margin-left: 30px;
-  }
-
-  .links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #e9e5af;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-
-  .links li {
-    margin: 0;
-    width: 100%;
-  }
-
-  .links a {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-button.active + .links,
-  .links.active {
-    display: flex;
-  }
-
-  .menu-slider-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .dropdown {
-    position: static;
-    width: 100%;
-    text-align: center;
-  }
-
-  .dropdown li {
-    width: 100%;
-  }
-
-  .dropdown a {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 376px) {
-  .links .tour-item{
-    display: none;
-  }
-  .links .excursions-button {
-    display: inline-block;
-  }
-
-  .dark-mode .menu-slider-container li {
-    background-color: #1e1e1e;
-  }
-  .menu-button {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #000;
-  }
-
-  .switch {
-    margin-left: 30px; 
-  }
-
-  .links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #e9e5af;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-
-  .links li {
-    margin: 0;
-    width: 100%;
-  }
-
-  .links a {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-button.active + .links,
-  .links.active {
-    display: flex;
-  }
-
-  .menu-slider-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .dropdown {
-    position: static;
-    width: 100%;
-    text-align: center;
-  }
-
-  .dropdown li {
-    width: 100%;
-  }
-
-  .dropdown a {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 424px) {
-
-  .links .tour-item{
-    display: none;
-  }
-  .links .excursions-button {
-    display: inline-block;
-  }
-
-  .dark-mode .menu-slider-container li{
-    background-color: #1e1e1e;
-  }
-  .menu-button {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2.2rem;
-    cursor: pointer;
-    color: #000;
-  }
-
-  .switch {
-    margin-left: 50px;
-  }
-
-  .links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #e9e5af;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-
-  .links li {
-    margin: 0;
-    width: 100%;
-  }
-
-  .links a {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-button.active + .links,
-  .links.active {
-    display: flex;
-  }
-
-  .menu-slider-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .dropdown {
-    position: static;
-    width: 100%;
-    text-align: center;
-  }
-
-  .dropdown li {
-    width: 100%;
-  }
-
-  .dropdown a {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-  }
-}
-
-@media (min-width: 425px) and (max-width: 767.98px) {
-
-  .links .tour-item{
-    display: none;
-  }
-  .links .excursions-button {
-    display: inline-block;
-  }
-
-  .dark-mode .menu-slider-container li{
-    background-color: #1e1e1e;
-  }
-  .menu-button {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2.2rem;
-    cursor: pointer;
-    color: #000;
-  }
-
-  .switch {
-    margin-left: 70px;
-  }
-
-  .links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #e9e5af;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-
-  .links li {
-    margin: 0;
-    width: 100%;
-  }
-
-  .links a {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-button.active + .links,
-  .links.active {
-    display: flex;
-  }
-
-  .menu-slider-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .dropdown {
-    position: static;
-    width: 100%;
-    text-align: center;
-  }
-
-  .dropdown li {
-    width: 100%;
-  }
-
-  .dropdown a {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023.98px){
-  
-  .dark-mode .excursions-button li{
-    background-color: #1e1e1e;
-  }
-
-  .links li {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-
-  .links a {
-    padding: 5px 17px;
-  }
-
-  .links .excursions-button {
-    display: inline-block;
-  }
-  .dark-mode .excursions-button li{
-    background-color: #1e1e1e;
-    border: none;
-  }
-
-  .container .tour-item {
-    display: none;
-  }
-
-  .excursions-button {
-    display: inline-block;
-  }
-
-  .links a {
-    margin-right: 5vw;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1210.98px) {
-
-  .dark-mode .excursions-button li {
-    background-color: #1e1e1e; 
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
-  .dark-mode .excursions-button li{
-    background-color: #1e1e1e;
-    border: none;
-  }
-
-  .container .tour-item {
-    display: none;
-  }
-
-  .excursions-button {
-    display: inline-block;
-  }
-
-  .links a {
-    margin-right: 60px;
-  }
-} 
-
-@media  (min-width: 1024px){
-  .links li {
-    margin-right: 5px;
-  }
-
-  .links a {
-    padding: 5px 10px;
-  }
-  
-  .links .excursions-button {
-    display: inline;
-  }
-}
-
-@media only screen and (min-width: 1211px)  and (max-width: 1454.98px) {
-  .links .excursions-button{
-    display: none;
-  }
-  
-  .links li {
-    margin-right: 5px;
-  }
-
-  .links a {
-    padding: 5px 10px;
-  }
-}
-
-@media screen and (min-width: 1456px) and (max-width:2000px) {
-  .links .excursions-button{
-    display: none;
-  }
-  .links li {
-    margin-right: 2.5vw;
-  }
-
-  .links a {
-    padding: 5px 10px;
-  }
-
-}
 
 .inverted {
     filter: invert(1) hue-rotate(180deg);
@@ -658,7 +201,6 @@ body.dark-mode .slider:before {
 body.dark-mode input:checked + .slider:before {
   background-color: #e0e0e0; 
 }
-
 
 .register-circle {
   position: fixed;
@@ -792,3 +334,562 @@ body.dark-mode .modal-content form select {
 .modal-content form button:hover {
   background-color: #45a049;
 }
+
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  margin: 0 auto;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 320px) {
+  .links .tour-item{
+    display: none;
+  }
+  .links .excursions-button {
+    display: inline-block;
+  }
+
+  .dark-mode .menu-slider-container li{
+    background-color: #1e1e1e;
+  }
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .switch {
+    margin-left: 30px;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e9e5af;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .links li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button.active + .links,
+  .links.active {
+    display: flex;
+  }
+
+  .menu-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown li {
+    width: 100%;
+  }
+
+  .dropdown a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .modal .modal-content {
+    width: 80%;
+    margin: 10% auto;
+  }
+  .register-circle{
+    width: 45px;
+    height: 45px; 
+    font-size: 11px;
+    transition: 0.3s ease;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .links .tour-item{
+    display: none;
+  }
+  .links .excursions-button {
+    display: inline-block;
+  }
+
+  .dark-mode .menu-slider-container li {
+    background-color: #1e1e1e;
+  }
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .switch {
+    margin-left: 30px; 
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e9e5af;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .links li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button.active + .links,
+  .links.active {
+    display: flex;
+  }
+
+  .menu-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown li {
+    width: 100%;
+  }
+
+  .dropdown a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .modal .modal-content {
+    width: 82%;
+    margin: 10% auto;
+    transition: 0.3s ease;
+  }
+  .register-circle{
+    width: 50px;
+    height: 50px; 
+    font-size: 11px;
+    transition: 0.3s ease;
+  }
+
+}
+
+@media (min-width: 376px) and (max-width: 424px) {
+
+  .links .tour-item{
+    display: none;
+  }
+  .links .excursions-button {
+    display: inline-block;
+  }
+
+  .dark-mode .menu-slider-container li{
+    background-color: #1e1e1e;
+  }
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .switch {
+    margin-left: 50px;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e9e5af;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .links li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button.active + .links,
+  .links.active {
+    display: flex;
+  }
+
+  .menu-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown li {
+    width: 100%;
+  }
+
+  .dropdown a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .register-circle{
+    width: 53px;
+    height: 53px; 
+    font-size: 12px;
+    transition: 0.3s ease;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767.98px) {
+
+  .links .tour-item{
+    display: none;
+  }
+  .links .excursions-button {
+    display: inline-block;
+  }
+
+  .dark-mode .menu-slider-container li{
+    background-color: #1e1e1e;
+  }
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .switch {
+    margin-left: 70px;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e9e5af;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .links li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button.active + .links,
+  .links.active {
+    display: flex;
+  }
+
+  .menu-slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown li {
+    width: 100%;
+  }
+
+  .dropdown a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .register-circle{
+    width: 54px;
+    height: 54px; 
+    font-size: 12px;
+    transition: 0.3s ease;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px){
+  
+  .dark-mode .excursions-button li{
+    background-color: #1e1e1e;
+  }
+
+  .links li {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .links a {
+    padding: 5px 17px;
+  }
+
+  .links .excursions-button {
+    display: inline-block;
+  }
+  .dark-mode .excursions-button li{
+    background-color: #1e1e1e;
+    border: none;
+  }
+
+  .container .tour-item {
+    display: none;
+  }
+
+  .excursions-button {
+    display: inline-block;
+  }
+
+  .links a {
+    margin-right: 5vw;
+  }
+  .register-circle{
+    width: 65px;
+    height: 65px; 
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1210.98px) {
+
+  .dark-mode .excursions-button li {
+    background-color: #1e1e1e; 
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .dark-mode .excursions-button li{
+    background-color: #1e1e1e;
+    border: none;
+  }
+
+  .container .tour-item {
+    display: none;
+  }
+
+  .excursions-button {
+    display: inline-block;
+  }
+
+  .links a {
+    margin-right: 60px;
+  }
+} 
+
+@media  (min-width: 1024px){
+  .links li {
+    margin-right: 5px;
+  }
+
+  .links a {
+    padding: 5px 10px;
+  }
+  
+  .links .excursions-button {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1211px)  and (max-width: 1454.98px) {
+  .links .excursions-button{
+    display: none;
+  }
+  
+  .links li {
+    margin-right: 5px;
+  }
+
+  .links a {
+    padding: 5px 10px;
+  }
+  
+}
+
+@media screen and (min-width: 1456px) and (max-width:2000px) {
+  .links .excursions-button{
+    display: none;
+  }
+  .links li {
+    margin-right: 2.5vw;
+  }
+
+  .links a {
+    padding: 5px 10px;
+  }
+  .video {
+    max-width: 80%;
+  }
+}
+
+@media (min-width:2000px){
+
+  .links .excursions-button{
+    display: none;
+  }
+  .links li {
+    margin-right: 2.5vw;
+    font-size: 130%;
+  }
+  .links a {
+    padding: 5px 10px;
+  }
+  .register-circle {
+    width: 105px;
+    height: 105px;
+    font-size: 20px;
+    transition: 0.3s ease;
+  }
+  .modal .modal-content {
+    width: 600px; 
+    margin: 5% auto; 
+    padding: 40px; 
+    font-size: 1.2em; 
+  }
+  .modal-content h2 {
+    font-size: 2em; 
+  }
+  .modal-content form label,
+  .modal-content form input,
+  .modal-content form select,
+  .modal-content form button {
+    font-size: 1.2em;
+  }
+
+  
+} 

@@ -33,11 +33,13 @@
   }
 
   
-   @media only screen and(min-width:2000px){
+   @media (min-width:2000px){
+    .main-text {
+      font-size: 30px;
+    }
     .main-text h1,
     .main-text h2,
-    .main-text p{ 
-        font-size: 30px;
-
+    .main-text p {
+      font-size: inherit;
     }
   } 
