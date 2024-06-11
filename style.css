@@ -209,7 +209,7 @@ body.dark-mode input:checked + .slider:before {
   width: 65px; 
   height: 65px; 
   background-color: #a8d5ba; 
-  color: white;
+  color:#000000;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -223,6 +223,17 @@ body.dark-mode input:checked + .slider:before {
 
 .register-circle:hover {
   background-color: #90c1a4;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .modal,
@@ -372,6 +383,8 @@ body.dark-mode .modal-content form select {
     font-size: 2rem;
     cursor: pointer;
     color: #000;
+    /* position: absolute;
+    left: 0; */
   }
 
   .switch {
