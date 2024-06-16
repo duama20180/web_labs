@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://duama20180.github.io/web_labs/</loc>
+    <lastmod>2024-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://duama20180.github.io/web_labs/history.html</loc>
+    <lastmod>2024-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://duama20180.github.io/web_labs/sights.html</loc>
+    <lastmod>2024-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://duama20180.github.io/web_labs/walkingTours.html</loc>
+    <lastmod>2024-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://duama20180.github.io/web_labs/cyclingRoutes.html</loc>
+    <lastmod>2024-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://duama20180.github.io/web_labs/busRoutes.html</loc>
+    <lastmod>2024-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://duama20180.github.io/web_labs/riverboatRoutes.html</loc>
+    <lastmod>2024-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

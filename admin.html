@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Головний сайт адміна">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="stAdmin.css"> 
+    <title> Головна </title>
+</head>    
+
+<body> 
+    <script src="./script.js" defer></script>
+    <script src="./specialScript.js" defer></script>
+    
+    <header class="header" aling="center">
+        <nav class="navbar">
+            <div class="container">
+                <div class="menu-slider-container">
+                    <ul class="links">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="history.html">Історія міста</a></li>
+                        <li><a href="sights.html">Цікаві місця</a></li>
+                        <li class="tour-item"><a href="walkingTours.html">Піші прогулянки</a></li>
+                        <li class="tour-item"><a href="cyclingRoutes.html">Велосипедні маршрути</a></li>
+                        <li class="tour-item"><a href="busRoutes.html">Автобусні маршрути</a></li>
+                        <li class="tour-item"><a href="riverboatRoutes.html">Прогулянки на теплоході</a></li>
+                        <li class="excursions-button">
+                            <a href="#">Екскурсії</a>
+                            <ul class="dropdown">
+                                <li><a href="walkingTours.html">Піші прогулянки</a></li>
+                                <li><a href="cyclingRoutes.html">Велосипедні маршрути</a></li>
+                                <li><a href="busRoutes.html">Автобусні маршрути</a></li>
+                                <li><a href="riverboatRoutes.html">Прогулянки на теплоході</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="menu-button">☰</button>
+                    <label class="switch" for="theme-slider">
+                        <span class="visually-hidden">Toggle theme</span>
+                        <input type="checkbox" id="theme-slider">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main-content">
+        <div class="api-buttons">
+            <button class="api-button get-button">GET</button>
+            <button class="api-button put-button">PUT</button>
+        </div>
+    </main>
+
+    
+    <div id="table-container" style="display: block;">
+        <table id="tourist-table">
+            <thead>
+                <tr>
+                    <th>Tour Select</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Discount Code</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="form-container" style="display: none;">
+        <form id="add-tourist-form" action="/" method="post">
+            <label for="tourselect">Tour Select:</label>
+            <input type="text" id="tourselect" name="tourselect">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname">
+            <label for="phonenumber">Phone Number:</label>
+            <input type="text" id="phonenumber" name="phonenumber">
+            <label for="discountcode">Discount Code:</label>
+            <input type="text" id="discountcode" name="discountcode">
+            <button type="button" onclick="submitTouristForm()">Submit</button>
+        </form>
+    </div>
+</main>
+
+
+
+</body>
+</html>

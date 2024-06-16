@@ -73,35 +73,34 @@
 
     <!-- реєстрація-->
     <div class="modal" id="modal">
-      <div class="modal-content">
-          <span class="close" id="close">&times;</span>
-          <h2>Реєстрація на екскурсію</h2>
-          <form id="registration-form">
-              <label for="tour-select">Вибір екскурсії:</label>
-              <select id="tour-select">
-                  <option value="walkingTours">Піші прогулянки</option>
-                  <option value="cyclingTours">Велосипедні прогулянки</option>
-                  <option value="busTours">Автобусні екскурсії</option>
-                  <option value="riverboatTours">Прогулянки на теплоході</option>
-              </select>
-              <br>
-                  <label for="first-name">Ім'я:</label>
-                  <input type="text" id="first-name" name="first-name">
-              <br>
-                  <label for="last-name">Прізвище:</label>
-                  <input type="text" id="last-name" name="last-name">
-              <br>
-                  <label for="phone-number">Номер телефону:</label>
-                  <input type="tel" id="phone-number" name="phone-number">
-              <br>
-                  <label for="discount-label">Код на знижку:</label>
-                  <input type="text" id="discount-label" name="discount-label">
-              <br>
-                  <button type="submit">Забронювати</button>
-
-          </form>
-      </div>
-  </div>
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <h2>Реєстрація на екскурсію</h2>
+            <form id="registration-form">
+                <label for="tourSelect">Вибір екскурсії:</label>
+                <select id="tourSelect">
+                    <option value="walkingTours">Піші прогулянки</option>
+                    <option value="cyclingTours">Велосипедні прогулянки</option>
+                    <option value="busTours">Автобусні екскурсії</option>
+                    <option value="riverboatTours">Прогулянки на теплоході</option>
+                </select>
+                <br>
+                    <label for="first-name">Ім'я:</label>
+                    <input type="text" id="firstName" name="firstName">
+                <br>
+                    <label for="last-name">Прізвище:</label>
+                    <input type="text" id="lastName" name="lastName">
+                <br>
+                    <label for="phone-number">Номер телефону:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                <br>
+                    <label for="discount-label">Код на знижку:</label>
+                    <input type="text" id="discountCode" name="discountCode">
+                <br>
+                    <button type="submit" id="submit">Забронювати</button>
+            </form>
+        </div>
+    </div>
 
 
         <script src="./script.js"></script>

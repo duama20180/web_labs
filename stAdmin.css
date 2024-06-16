@@ -1,0 +1,56 @@
+.api-buttons {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.api-button {
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-button {
+    background-color: #4CAF50; 
+}
+
+.put-button {
+    background-color: #FFC107; 
+}
+
+.delete-button {
+    background-color: #F44336; 
+}
+
+.api-button:hover {
+    opacity: 0.8;
+}
+
+.table-container {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 30px 80px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}

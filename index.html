@@ -6,16 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Головна сторінка сайту з фотографіями Вінниці та короткими описами. Дізнайтеся більше про туризм Вінницею">
     <meta name="keywords" content="Вінниця, фотографії Вінниці, відео Вінниці, туризм, визначні місця Вінниці">
-    <!-- <meta name="author" content="Ваше ім'я або компанія"> -->
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="stIndex.css"> 
     <title> Головна </title>
 </head>    
 
 <body> 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-
 
     <header class="header" aling="center">
         <nav class="navbar">
@@ -98,28 +94,28 @@
         <div class="modal-content">
             <span class="close" id="close">&times;</span>
             <h2>Реєстрація на екскурсію</h2>
-            <form id="registration-form">
-                <label for="tour-select">Вибір екскурсії:</label>
-                <select id="tour-select">
-                    <option value="walkingTours">Піші прогулянки</option>
-                    <option value="cyclingTours">Велосипедні прогулянки</option>
-                    <option value="busTours">Автобусні екскурсії</option>
-                    <option value="riverboatTours">Прогулянки на теплоході</option>
+            <form id="registration-form" action="/" method="post">
+                <label for="tourSelect">Вибір екскурсії:</label>
+                <select id="tourselect" name="tourselect">
+                    <option value="пішаПрогулянка">Піші прогулянки</option>
+                    <option value="Велосипед">Велосипедні прогулянки</option>
+                    <option value="Автобус">Автобусні екскурсії</option>
+                    <option value="Теплоход">Прогулянки на теплоході</option>
                 </select>
                 <br>
-                    <label for="first-name">Ім'я:</label>
-                    <input type="text" id="first-name" name="first-name">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="firstname" name="firstname">
                 <br>
-                    <label for="last-name">Прізвище:</label>
-                    <input type="text" id="last-name" name="last-name">
+                <label for="lastName">Прізвище:</label>
+                <input type="text" id="lastname" name="lastname">
                 <br>
-                    <label for="phone-number">Номер телефону:</label>
-                    <input type="tel" id="phone-number" name="phone-number">
+                <label for="phoneNumber">Номер телефону:</label>
+                <input type="tel" id="phonenumber" name="phonenumber">
                 <br>
-                    <label for="discount-label">Код на знижку:</label>
-                    <input type="text" id="discount-label" name="discount-label">
+                <label for="discountCode">Код на знижку:</label>
+                <input type="text" id="discountcode" name="discountcode">
                 <br>
-                    <button type="submit" id="submit">Забронювати</button>
+                <button type="submit" id="submit">Забронювати</button>
             </form>
         </div>
     </div>
